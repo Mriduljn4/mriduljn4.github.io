@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mridul Jain — Agentic AI Developer building enterprise GenAI, RAG, Python, and Azure solutions." />
+  <meta name="keywords" content="Agentic AI Developer, Generative AI, RAG, LangGraph, Python, Azure OpenAI, Azure AI Search, Microsoft AI Foundry" />
+  <meta name="author" content="Mridul Jain" />
+  <meta property="og:title" content="Mridul Jain | Agentic AI Developer" />
+  <meta property="og:description" content="Building intelligent enterprise solutions with Python, Generative AI, RAG, LLMs, and Azure." />
+  <meta property="og:type" content="website" />
+  <title>Mridul Jain | Agentic AI Developer</title>
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem('mridul-theme');
+      const systemPrefersDark = matchMedia('(prefers-color-scheme: dark)').matches;
+      // Dark is the portfolio's default identity; an explicit saved choice always wins.
+      document.documentElement.classList.toggle('dark', savedTheme ? savedTheme === 'dark' : true);
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { accent: '#6d8cff', surface: '#0c1019' }, boxShadow: { premium: '0 22px 56px rgba(0,0,0,.24)' } } } };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { transition: background-color .25s ease, color .25s ease; }
+    .noise-grid { background-image: linear-gradient(rgba(148,163,184,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.06) 1px,transparent 1px); background-size:38px 38px; }
+    .orb { filter: blur(70px); opacity:.26; }
+    .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .reveal { opacity:0; transform:translateY(16px); transition:opacity .55s ease,transform .55s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    dialog::backdrop { background:rgba(2,6,16,.78); backdrop-filter:blur(5px); }
+    dialog[open] { animation:appear .2s ease-out; }
+    @keyframes appear { from { opacity:0; transform:translateY(10px) scale(.985) } to { opacity:1; transform:none } }
+    @media (prefers-reduced-motion: reduce) { *,*:before,*:after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } .reveal { opacity:1; transform:none; } }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased dark:bg-[#080b12] dark:text-slate-100">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] rounded-lg bg-accent px-4 py-2 font-semibold text-white">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-slate-50/85 backdrop-blur-xl dark:border-white/10 dark:bg-[#080b12]/85">
+    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 lg:px-8" aria-label="Primary navigation">
+      <a href="#home" class="text-sm font-black tracking-[.18em] text-slate-900 dark:text-white">MRIDUL<span class="text-accent">.</span></a>
+      <div class="hidden items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-400 md:flex">
+        <a class="nav-link" href="#about">About</a><a class="nav-link" href="#experience">Experience</a><a class="nav-link" href="#projects">Projects</a><a class="nav-link" href="#expertise">Expertise</a><a class="nav-link" href="#stack">Stack</a><a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <div class="flex items-center gap-1">
+        <a class="icon-button hidden sm:grid" href="https://github.com/Mriduljn4" target="_blank" rel="noreferrer" aria-label="Visit Mridul's GitHub"><i data-lucide="code-2"></i></a>
+        <a class="icon-button hidden sm:grid" href="https://www.linkedin.com/in/jain-mridul/" target="_blank" rel="noreferrer" aria-label="Visit Mridul's LinkedIn"><i data-lucide="briefcase-business"></i></a>
+        <button id="theme-toggle" class="icon-button" aria-label="Switch to light theme"><i data-lucide="sun"></i></button>
+        <button id="menu-toggle" class="icon-button md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i data-lucide="menu"></i></button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-slate-50 px-5 py-4 dark:border-white/10 dark:bg-[#080b12] md:hidden">
+      <div class="grid gap-1 text-sm font-semibold"><a class="mobile-link" href="#about">About</a><a class="mobile-link" href="#experience">Experience</a><a class="mobile-link" href="#projects">Projects</a><a class="mobile-link" href="#expertise">Expertise</a><a class="mobile-link" href="#stack">Stack</a><a class="mobile-link" href="#contact">Contact</a><div class="mt-3 flex gap-3"><a class="mobile-link" href="https://github.com/Mriduljn4" target="_blank" rel="noreferrer">GitHub</a><a class="mobile-link" href="https://www.linkedin.com/in/jain-mridul/" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="noise-grid relative isolate overflow-hidden">
+      <div class="orb absolute -left-28 top-10 -z-10 h-72 w-72 rounded-full bg-indigo-500"></div><div class="orb absolute right-0 top-28 -z-10 h-80 w-80 rounded-full bg-cyan-400"></div>
+      <div class="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.2fr_.8fr] lg:px-8">
+        <div class="reveal">
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/80 px-3 py-1.5 text-xs font-bold tracking-wide text-indigo-700 dark:border-indigo-400/20 dark:bg-indigo-400/10 dark:text-indigo-300"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>Available for meaningful AI engineering work</p>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-accent">Hello, I’m Mridul Jain</p>
+          <h1 class="mt-4 max-w-3xl text-5xl font-black tracking-[-.05em] text-slate-950 sm:text-6xl lg:text-7xl dark:text-white">Agentic AI<br><span class="text-accent">Developer.</span></h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">Building intelligent enterprise solutions with Generative AI, Agentic AI, RAG, Python, and Azure.</p>
+          <p class="mt-3 max-w-xl text-sm leading-6 text-slate-500 dark:text-slate-400">4.5+ years in enterprise software engineering, including 2 years focused on production-minded GenAI and agentic AI.</p>
+          <div class="mt-8 flex flex-wrap gap-3"><!-- Change ./resume.pdf here if the deployed file uses another filename. --><a href="./resume.pdf" download class="primary-button"><i data-lucide="download"></i>Download Resume</a><a href="#projects" class="secondary-button">View Projects <i data-lucide="arrow-down-right"></i></a></div>
+          <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-semibold tracking-wide text-slate-500 dark:text-slate-400"><span>Python</span><span class="text-accent">·</span><span>Agentic AI</span><span class="text-accent">·</span><span>GenAI</span><span class="text-accent">·</span><span>RAG</span><span class="text-accent">·</span><span>Azure</span><span class="text-accent">·</span><span>LLMs</span></div>
+          <div class="mt-7 flex gap-3"><a class="icon-button" href="https://github.com/Mriduljn4" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="code-2"></i></a><a class="icon-button" href="https://www.linkedin.com/in/jain-mridul/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i data-lucide="briefcase-business"></i></a><a class="icon-button" href="mailto:mriduljn4@gmail.com" aria-label="Email Mridul Jain"><i data-lucide="mail"></i></a></div>
+        </div>
+        <div class="reveal relative mx-auto w-full max-w-md" style="transition-delay:.12s">
+          <div class="absolute inset-5 rounded-[2rem] bg-gradient-to-br from-indigo-500/25 to-cyan-400/15 blur-2xl"></div>
+          <div class="glass relative rounded-3xl border border-slate-200/80 bg-white/70 p-5 shadow-premium dark:border-white/10 dark:bg-white/[.045]">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4 dark:border-white/10"><div class="flex gap-1.5"><span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span><span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span><span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span></div><span class="font-mono text-[10px] text-slate-400">agentic_ai.py</span></div>
+            <div class="space-y-2.5 py-6 font-mono text-[10px] leading-5 sm:text-[11px]"><p class="text-indigo-500">class <span class="text-slate-900 dark:text-slate-100">AgenticAIStack</span>:</p><p class="pl-4 text-slate-500">platform = [<span class="text-emerald-600 dark:text-emerald-400">"Microsoft AI Foundry"</span>, <span class="text-emerald-600 dark:text-emerald-400">"Copilot Studio"</span>]</p><p class="pl-4 text-slate-500">llm = <span class="text-emerald-600 dark:text-emerald-400">"Azure OpenAI"</span></p><p class="pl-4 text-slate-500">orchestration = [<span class="text-emerald-600 dark:text-emerald-400">"LangChain"</span>, <span class="text-emerald-600 dark:text-emerald-400">"LangGraph"</span>, <span class="text-emerald-600 dark:text-emerald-400">"Microsoft Agent Framework"</span>]</p><p class="pl-4 text-slate-500">retrieval = [<span class="text-emerald-600 dark:text-emerald-400">"Azure AI Search"</span>, <span class="text-emerald-600 dark:text-emerald-400">"Vector DB"</span>]</p><p class="pl-4 text-slate-500">engineering = [<span class="text-emerald-600 dark:text-emerald-400">"RAG"</span>, <span class="text-emerald-600 dark:text-emerald-400">"MCP"</span>, <span class="text-emerald-600 dark:text-emerald-400">"Evaluation"</span>]</p></div>
+            <div class="grid grid-cols-3 gap-2"><div class="rounded-xl border border-slate-200 bg-slate-50 p-3 dark:border-white/10 dark:bg-white/[.035]"><i data-lucide="bot" class="h-4 w-4 text-accent"></i><p class="mt-2 text-[10px] font-bold uppercase tracking-wide text-slate-500">Agents</p><p class="mt-1 text-[10px] text-slate-400">Tool use · MCP</p></div><div class="rounded-xl border border-slate-200 bg-slate-50 p-3 dark:border-white/10 dark:bg-white/[.035]"><i data-lucide="search" class="h-4 w-4 text-cyan-500"></i><p class="mt-2 text-[10px] font-bold uppercase tracking-wide text-slate-500">RAG</p><p class="mt-1 text-[10px] text-slate-400">Search · vectors</p></div><div class="rounded-xl border border-slate-200 bg-slate-50 p-3 dark:border-white/10 dark:bg-white/[.035]"><i data-lucide="activity" class="h-4 w-4 text-emerald-500"></i><p class="mt-2 text-[10px] font-bold uppercase tracking-wide text-slate-500">LLMOps</p><p class="mt-1 text-[10px] text-slate-400">Evaluation · monitoring</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-6xl px-5 py-20 lg:px-8"><div class="grid gap-9 md:grid-cols-[.7fr_1.3fr]"><div class="reveal"><p class="eyebrow">About</p><h2 class="section-title">Built for applied AI.</h2></div><div class="reveal"><p class="text-base leading-8 text-slate-600 dark:text-slate-300">I am an Agentic AI and Python Engineer with enterprise software engineering experience across backend services, automation, and cloud delivery. My current focus is building practical GenAI systems using Microsoft AI Foundry, Azure OpenAI, Azure AI Search, LangChain, and LangGraph. I work across RAG, tool integration, evaluation, monitoring, and deployment to help transform enterprise knowledge and workflows into grounded, useful AI applications.</p><div class="mt-6 flex flex-wrap gap-2"><span class="tag">Agentic AI</span><span class="tag">Generative AI</span><span class="tag">RAG</span><span class="tag">Python</span><span class="tag">Azure</span></div></div></div></section>
+
+    <section id="experience" class="border-y border-slate-200 bg-slate-100/70 py-20 dark:border-white/10 dark:bg-white/[.025]"><div class="mx-auto max-w-6xl px-5 lg:px-8"><div class="reveal"><p class="eyebrow">Experience</p><h2 class="section-title">Enterprise engineering, applied AI.</h2></div><div class="mt-10 grid gap-5 lg:grid-cols-2">
+      <article class="experience-card reveal"><div class="flex items-start justify-between gap-4"><div><h3>Senior Associate Consultant</h3><p class="mt-1 font-medium text-slate-600 dark:text-slate-300">Infosys Limited</p></div><span class="role-date">Jan 2025 — Present</span></div><p class="mt-1 text-xs text-slate-500">On-site · Gurgaon</p><ul class="mt-6 space-y-3 text-sm leading-6 text-slate-600 dark:text-slate-400"><li>Engineered an agentic RAG architecture with Microsoft AI Foundry, Azure OpenAI, LangGraph, and Azure AI Search.</li><li>Improved retrieval relevance by <strong>~45%</strong> and decreased response latency by <strong>~20%</strong>.</li><li>Built tool-augmented agents integrating <strong>5+ enterprise tools and data sources</strong>.</li></ul><details class="mt-5"><summary>View more</summary><p class="mt-3 text-sm leading-6 text-slate-500 dark:text-slate-400">Constructed an LLM reporting pipeline that reduced manual preparation by ~40%. Implemented Azure Application Insights, GitHub Actions CI/CD, and JWT, Microsoft Entra ID, and OAuth2.0 authentication and authorization.</p></details></article>
+      <article class="experience-card reveal"><div class="flex items-start justify-between gap-4"><div><h3>System Engineer</h3><p class="mt-1 font-medium text-slate-600 dark:text-slate-300">Tata Consultancy Services (TCS)</p></div><span class="role-date">Apr 2021 — Jan 2025</span></div><p class="mt-1 text-xs text-slate-500">On-site · Bangalore</p><ul class="mt-6 space-y-3 text-sm leading-6 text-slate-600 dark:text-slate-400"><li>Designed scalable Python backend services and REST APIs using FastAPI and Django.</li><li>Built real-time monitoring automation, reducing manual monitoring effort by <strong>~60%</strong>.</li><li>Automated reporting workflows with Python and Excel, reducing report-generation time by <strong>~90%</strong>.</li></ul><details class="mt-5"><summary>View more</summary><p class="mt-3 text-sm leading-6 text-slate-500 dark:text-slate-400">Supported enterprise applications with concurrent integrations across microservices architecture and downstream systems.</p></details></article>
+    </div></div></section>
+
+    <section id="projects" class="mx-auto max-w-6xl px-5 py-20 lg:px-8"><div class="reveal flex flex-wrap items-end justify-between gap-4"><div><p class="eyebrow">Selected work</p><h2 class="section-title">Featured Projects</h2></div><p class="max-w-sm text-sm leading-6 text-slate-500">Focused on grounded AI, enterprise knowledge, and audit automation.</p></div><div id="project-grid" class="mt-10 grid gap-5 md:grid-cols-3"></div></section>
+
+    <section id="expertise" class="border-y border-slate-200 bg-slate-100/70 py-20 dark:border-white/10 dark:bg-white/[.025]"><div class="mx-auto max-w-6xl px-5 lg:px-8"><div class="reveal max-w-2xl"><p class="eyebrow">Production AI Expertise</p><h2 class="section-title">Production AI Engineering</h2><p class="mt-4 text-sm leading-6 text-slate-500 dark:text-slate-400">A concise view of resume-supported delivery experience, separated from broader AI engineering knowledge.</p></div><div id="expertise-grid" class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div></div></section>
+
+    <section id="stack" class="border-y border-slate-200 bg-slate-100/70 py-20 dark:border-white/10 dark:bg-white/[.025]"><div class="mx-auto max-w-6xl px-5 lg:px-8"><div class="reveal"><p class="eyebrow">Technology</p><h2 class="section-title">Tech Stack</h2><p class="mt-3 text-sm text-slate-500">Technologies explicitly listed in the resume.</p></div><div id="stack-grid" class="mt-10 grid gap-7"></div><div class="reveal mt-12 grid gap-5 border-t border-slate-200 pt-8 text-sm dark:border-white/10 md:grid-cols-2"><div><p class="font-bold text-slate-900 dark:text-white">Education</p><p class="mt-2 text-slate-500">B.E., Electronics and Communication Engineering — Rustamji Institute of Technology, BSF Academy (2016 — 2020)</p></div><div><p class="font-bold text-slate-900 dark:text-white">Certifications</p><p class="mt-2 text-slate-500">Infosys Certified Applied Generative AI Professional · Infosys Certified Generative AI Professional — Foundation · Full-Stack AI with Python: LLMs, RAG, Agents & LangGraph — Udemy</p></div></div></div></section>
+
+    <section id="contact" class="noise-grid relative overflow-hidden"><div class="orb absolute right-10 top-0 h-64 w-64 rounded-full bg-indigo-500"></div><div class="relative mx-auto max-w-6xl px-5 py-20 text-center lg:px-8"><p class="eyebrow">Contact</p><h2 class="mx-auto mt-4 max-w-3xl text-4xl font-black tracking-[-.045em] sm:text-5xl">Let’s Build Intelligent Systems.</h2><p class="mx-auto mt-5 max-w-xl leading-7 text-slate-600 dark:text-slate-400">Interested in GenAI, Agentic AI, or intelligent enterprise applications? Let’s connect.</p><div class="mt-8 flex flex-wrap justify-center gap-3"><a href="mailto:mriduljn4@gmail.com" class="primary-button"><i data-lucide="mail"></i>mriduljn4@gmail.com</a><a href="https://www.linkedin.com/in/jain-mridul/" target="_blank" rel="noreferrer" class="secondary-button"><i data-lucide="briefcase-business"></i>LinkedIn</a><a href="https://github.com/Mriduljn4" target="_blank" rel="noreferrer" class="secondary-button"><i data-lucide="code-2"></i>GitHub</a></div></div></section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-7 dark:border-white/10"><div class="mx-auto flex max-w-6xl flex-col justify-between gap-3 px-5 text-xs text-slate-500 sm:flex-row lg:px-8"><span>© <span id="year"></span> Mridul Jain · Agentic AI Developer</span><span>Built with HTML, Tailwind CSS & JavaScript</span></div></footer>
+  <button id="back-to-top" class="fixed bottom-5 right-5 hidden h-10 w-10 place-items-center rounded-full bg-accent text-white shadow-lg transition hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 dark:focus:ring-offset-[#080b12]" aria-label="Back to top"><i data-lucide="arrow-up" class="h-4 w-4"></i></button>
+
+  <dialog id="project-modal" class="w-[min(92vw,580px)] rounded-2xl border border-slate-200 bg-white p-0 text-slate-800 shadow-2xl dark:border-white/10 dark:bg-[#101522] dark:text-slate-100"><div class="max-h-[82vh] overflow-y-auto p-6 sm:p-8"><div class="flex items-start justify-between gap-4"><div><p id="modal-category" class="eyebrow"></p><h2 id="modal-title" class="mt-2 text-2xl font-black"></h2></div><button id="modal-close" class="icon-button" aria-label="Close project details"><i data-lucide="x"></i></button></div><div id="modal-content" class="mt-7 space-y-5"></div></div></dialog>
+
+  <script>
+    const projects = [
+      { title: 'Enterprise RAG Architecture', category: 'Infosys initiative', description: 'An agentic RAG application built to improve knowledge retrieval, grounded answers, and enterprise workflow automation.', tags: ['Microsoft AI Foundry','Azure OpenAI','LangGraph','Azure AI Search','RAG'], impact: 'Improved retrieval relevance by ~45% and reduced response latency by ~20%.', problem: 'Enterprise knowledge workflows needed more relevant retrieval, grounded responses, and lower response latency.', solution: 'Engineered an agentic AI architecture and tool-augmented agents with dynamic retrieval, integrating 5+ enterprise tools and data sources.' },
+      { title: 'Risk Assessment Agent', category: 'Named project', description: 'A multimodal agentic audit solution for processing documents and financial inputs to identify risks and recommend classifications.', tags: ['Microsoft AI Foundry','Azure AI Search','Agent Framework','MCP','Evaluation'], impact: 'Generated rationale-backed audit recommendations aligned with compliance guidance.', problem: 'Audit teams needed intelligent processing of diverse document formats and financial inputs.', solution: 'Developed a multimodal agentic solution to identify risks, recommend classifications, and generate rationale-backed audit recommendations.' },
+      { title: 'AI Knowledge Assistant', category: 'Named project', description: 'An enterprise conversational knowledge assistant that delivers source-cited answers through Microsoft collaboration surfaces.', tags: ['Copilot Studio','Azure AI Search','Azure OpenAI','Power Platform','MCP'], impact: 'Delivered source-cited answers at scale.', problem: 'Users needed conversational access to assurance guidance across enterprise knowledge sources.', solution: 'Developed an assistant using Microsoft Copilot Studio, Azure AI Search, and Azure OpenAI for grounded responses in Teams and Microsoft 365 Copilot.' }
+    ];
+    const technologyGroups = [
+      { label: 'AI & GenAI', items: [['Agentic AI','bot'],['Generative AI','sparkles'],['LLMs','message-square'],['RAG','search'],['LangChain','link'],['LangGraph','git-branch'],['Azure OpenAI','sparkles'],['Hugging Face','smile']] },
+      { label: 'Programming & Backend', items: [['Python','code-2'],['FastAPI','zap'],['Django','blocks'],['REST APIs','braces'],['Flask','flask-conical']] },
+      { label: 'Azure, Search & Engineering', items: [['Microsoft Azure','cloud'],['Azure AI Search','search-check'],['Microsoft AI Foundry','factory'],['Azure Application Insights','activity'],['FAISS','database'],['Pinecone','tree-pine'],['Redis','database-zap'],['Docker','container'],['GitHub Actions','git-branch']] }
+    ];
+    const expertiseAreas = [
+      { icon: 'bot', title: 'Agentic AI', experienced: ['AI agents', 'LangGraph', 'Tool use', 'Dynamic retrieval', 'MCP'], knowledge: ['Agent orchestration', 'Multi-agent systems', 'State management', 'Structured outputs'] },
+      { icon: 'search-check', title: 'RAG Engineering', experienced: ['RAG pipelines', 'Azure AI Search', 'Vector databases', 'Source-cited answers', 'FAISS & Pinecone'], knowledge: ['Document ingestion', 'Chunking', 'Metadata filtering', 'Grounded generation'] },
+      { icon: 'layers-3', title: 'Memory & Context', experienced: ['Memory (listed skill)', 'Tool-integrated context'], knowledge: ['Short-term memory', 'Long-term memory', 'Semantic memory', 'Response & retrieval caching'] },
+      { icon: 'clipboard-check', title: 'LLM / RAG Evaluation', experienced: ['Evaluation (listed skill)', 'Retrieval relevance improvement', 'Answer grounding'], knowledge: ['LLM-as-a-Judge', 'Faithfulness', 'Context precision & recall', 'Regression evaluation'] },
+      { icon: 'shield-check', title: 'Guardrails & AI Security', experienced: ['JWT authentication', 'Microsoft Entra ID', 'OAuth2.0', 'Security (listed skill)'], knowledge: ['Prompt injection protection', 'Input & output validation', 'Content safety', 'Tool permission controls'] },
+      { icon: 'activity', title: 'Production & Observability', experienced: ['Azure Application Insights', 'Monitoring & observability', 'GitHub Actions CI/CD', 'Telemetry'], knowledge: ['Tracing', 'Latency & token monitoring', 'Retry & timeout handling', 'Prompt/version management'] }
+    ];
+    const $ = (selector, scope = document) => scope.querySelector(selector);
+
+    function renderProjects() {
+      $('#project-grid').innerHTML = projects.map((project, index) => `
+        <article class="project-card reveal"><p class="eyebrow">${project.category}</p><h3 class="mt-3 text-xl font-bold">${project.title}</h3><p class="mt-3 min-h-[4.5rem] text-sm leading-6 text-slate-600 dark:text-slate-400">${project.description}</p><div class="mt-5 flex flex-wrap gap-1.5">${project.tags.slice(0, 4).map(tag => `<span class="tag text-[10px]">${tag}</span>`).join('')}</div><p class="mt-5 text-xs font-bold leading-5 text-accent">${project.impact}</p><button class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-slate-900 transition hover:text-accent dark:text-white" data-project-index="${index}">View Details <i data-lucide="arrow-up-right" class="h-4 w-4"></i></button></article>`).join('');
+      document.querySelectorAll('[data-project-index]').forEach(button => button.addEventListener('click', () => openProject(Number(button.dataset.projectIndex))));
+    }
+    function renderStack() {
+      $('#stack-grid').innerHTML = technologyGroups.map(group => `<section class="reveal"><h3 class="mb-3 text-xs font-bold uppercase tracking-[.16em] text-slate-500">${group.label}</h3><div class="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">${group.items.map(([name, icon]) => `<div class="tech-card">${icon.startsWith('http') ? `<img src="${icon}" alt="" width="26" height="26" loading="lazy">` : `<i data-lucide="${icon}" class="h-6 w-6 text-accent"></i>`}<span>${name}</span></div>`).join('')}</div></section>`).join('');
+    }
+    /** Render concise cards that distinguish demonstrated work from broader engineering knowledge. */
+    function renderExpertise() {
+      $('#expertise-grid').innerHTML = expertiseAreas.map(area => `<article class="expertise-card reveal"><div class="flex items-center gap-3"><span class="grid h-9 w-9 place-items-center rounded-lg bg-indigo-500/10 text-accent"><i data-lucide="${area.icon}" class="h-4 w-4"></i></span><h3 class="font-bold">${area.title}</h3></div><div class="mt-5"><p class="expertise-label">Experience</p><div class="mt-2 flex flex-wrap gap-1.5">${area.experienced.map(item => `<span class="tag text-[10px]">${item}</span>`).join('')}</div></div><div class="mt-4"><p class="expertise-label">AI Engineering Knowledge</p><div class="mt-2 flex flex-wrap gap-1.5">${area.knowledge.map(item => `<span class="knowledge-tag">${item}</span>`).join('')}</div></div></article>`).join('');
+    }
+    function openProject(index) {
+      const project = projects[index];
+      $('#modal-category').textContent = project.category;
+      $('#modal-title').textContent = project.title;
+      $('#modal-content').innerHTML = `<div><h3 class="modal-heading">Problem</h3><p>${project.problem}</p></div><div><h3 class="modal-heading">Solution</h3><p>${project.solution}</p></div><div><h3 class="modal-heading">Technologies</h3><div class="mt-2 flex flex-wrap gap-2">${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div></div><div><h3 class="modal-heading">Key Impact</h3><p class="font-semibold text-accent">${project.impact}</p></div>`;
+      $('#project-modal').showModal();
+      $('#modal-close').focus();
+    }
+    function setupReveal() {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
+      document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProjects(); renderStack(); renderExpertise(); lucide.createIcons(); setupReveal(); $('#year').textContent = new Date().getFullYear();
+      const themeToggle = $('#theme-toggle');
+      const setThemeControl = () => { const dark = document.documentElement.classList.contains('dark'); themeToggle.innerHTML = `<i data-lucide="${dark ? 'sun' : 'moon'}"></i>`; themeToggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme'); lucide.createIcons(); };
+      setThemeControl(); themeToggle.addEventListener('click', () => { document.documentElement.classList.toggle('dark'); localStorage.setItem('mridul-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light'); setThemeControl(); });
+      const menu = $('#mobile-menu'), menuToggle = $('#menu-toggle');
+      menuToggle.addEventListener('click', () => { const open = menu.classList.toggle('hidden') === false; menuToggle.setAttribute('aria-expanded', open); menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); });
+      document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => { menu.classList.add('hidden'); menuToggle.setAttribute('aria-expanded', 'false'); }));
+      $('#modal-close').addEventListener('click', () => $('#project-modal').close()); $('#project-modal').addEventListener('click', event => { if (event.target === $('#project-modal')) $('#project-modal').close(); });
+      const backToTop = $('#back-to-top'); window.addEventListener('scroll', () => backToTop.classList.toggle('hidden', scrollY < 600), { passive: true }); backToTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+    });
+  </script>
+  <style>
+    .nav-link { transition:color .18s ease; } .nav-link:hover { color:#6d8cff; }
+    .icon-button { display:grid; height:34px; width:34px; place-items:center; border-radius:.55rem; color:#64748b; transition:background .18s,color .18s,transform .18s; } .icon-button:hover { background:rgba(109,140,255,.1); color:#6d8cff; transform:translateY(-1px); } .icon-button:focus-visible,.primary-button:focus-visible,.secondary-button:focus-visible,.project-card button:focus-visible { outline:2px solid #6d8cff; outline-offset:3px; } .icon-button svg { height:17px; width:17px; }
+    .primary-button,.secondary-button { display:inline-flex; align-items:center; gap:.55rem; border-radius:.75rem; padding:.78rem 1rem; font-size:.86rem; font-weight:700; transition:transform .18s,background .18s,border-color .18s; } .primary-button { background:#6d8cff; color:white; box-shadow:0 8px 25px rgba(109,140,255,.22); } .primary-button:hover { background:#5878f6; transform:translateY(-2px); } .secondary-button { border:1px solid #cbd5e1; color:#334155; } .secondary-button:hover { border-color:#6d8cff; color:#6d8cff; transform:translateY(-2px); } .dark .secondary-button { border-color:rgba(255,255,255,.14); color:#e2e8f0; }
+    .eyebrow { font-size:.72rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:#6d8cff; } .section-title { margin-top:.6rem; font-size:clamp(2rem,4vw,2.75rem); font-weight:900; letter-spacing:-.045em; line-height:1.1; color:#0f172a; } .dark .section-title { color:#fff; }
+    .tag { display:inline-flex; border:1px solid #dbe2ee; border-radius:999px; background:#fff; padding:.32rem .58rem; font-size:.72rem; font-weight:650; color:#475569; } .dark .tag { border-color:rgba(255,255,255,.12); background:rgba(255,255,255,.045); color:#cbd5e1; }
+    .experience-card,.project-card { border:1px solid #dce3ed; border-radius:1rem; background:#fff; padding:1.5rem; transition:transform .2s,border-color .2s,box-shadow .2s; } .experience-card:hover,.project-card:hover { transform:translateY(-4px); border-color:rgba(109,140,255,.65); box-shadow:0 16px 34px rgba(15,23,42,.07); } .dark .experience-card,.dark .project-card { border-color:rgba(255,255,255,.1); background:rgba(255,255,255,.035); } .dark .experience-card:hover,.dark .project-card:hover { box-shadow:0 18px 40px rgba(0,0,0,.25); } .experience-card h3 { font-size:1.1rem; font-weight:800; } .role-date { white-space:nowrap; border-radius:999px; background:#eef2ff; padding:.3rem .55rem; font-size:.66rem; font-weight:800; color:#4f46e5; } .dark .role-date { background:rgba(109,140,255,.15); color:#a5b4fc; } details summary { cursor:pointer; list-style:none; color:#6d8cff; font-size:.78rem; font-weight:800; } details summary::-webkit-details-marker { display:none; } details summary::after { content:' +'; margin-left:.25rem; } details[open] summary::after { content:' −'; }
+    .expertise-card { border:1px solid #dce3ed; border-radius:1rem; background:#fff; padding:1.25rem; transition:transform .2s,border-color .2s,box-shadow .2s; } .expertise-card:hover { transform:translateY(-3px); border-color:rgba(109,140,255,.65); box-shadow:0 16px 34px rgba(15,23,42,.07); } .dark .expertise-card { border-color:rgba(255,255,255,.1); background:rgba(255,255,255,.035); } .dark .expertise-card:hover { box-shadow:0 18px 40px rgba(0,0,0,.22); } .expertise-label { font-size:.62rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; color:#6d8cff; } .knowledge-tag { display:inline-flex; border:1px dashed #cbd5e1; border-radius:999px; padding:.32rem .58rem; font-size:.64rem; font-weight:650; color:#64748b; } .dark .knowledge-tag { border-color:rgba(255,255,255,.22); color:#94a3b8; }
+    .tech-card { display:flex; min-height:104px; flex-direction:column; align-items:center; justify-content:center; gap:.7rem; border:1px solid #dce3ed; border-radius:.85rem; background:#fff; padding:.7rem .4rem; text-align:center; transition:transform .18s,border-color .18s,background .18s; } .tech-card:hover { transform:translateY(-3px); border-color:#6d8cff; background:#f7f8ff; } .dark .tech-card { border-color:rgba(255,255,255,.1); background:rgba(255,255,255,.035); } .dark .tech-card:hover { background:rgba(109,140,255,.09); } .tech-card img { height:26px; width:26px; object-fit:contain; } .tech-card span { font-size:.66rem; font-weight:750; color:#64748b; } .dark .tech-card span { color:#cbd5e1; }
+    #modal-content p { font-size:.9rem; line-height:1.65; color:#64748b; } .dark #modal-content p { color:#cbd5e1; } .modal-heading { font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:#6d8cff; }
+    .mobile-link { padding:.65rem .2rem; color:#475569; } .dark .mobile-link { color:#cbd5e1; }
+  </style>
+</body>
+</html>
